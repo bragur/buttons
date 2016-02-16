@@ -28,26 +28,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func hideBlueButton(sender: AnyObject) {
-        if showingBlue {
-            showingBlue = false
-            blueButton.hidden = true
+        showingBlue = !showingBlue
+        blueButton.hidden = !showingBlue
+        
+        if !showingBlue {
             blueHider.setTitle("Show Blue button", forState: .Normal)
         } else {
-            showingBlue = true
-            blueButton.hidden = false
             blueHider.setTitle("Hide Blue button", forState: .Normal)
         }
-        
     }
 
     @IBAction func hideRedButton(sender: AnyObject) {
-        if showingRed {
-            showingRed = false
-            redButton.hidden = true
+        showingRed = !showingRed
+        redButton.hidden = !showingRed
+        
+        if !showingRed {
             redHider.setTitle("Show Red button", forState: .Normal)
         } else {
-            showingRed = true
-            redButton.hidden = false
             redHider.setTitle("Hide Red button", forState: .Normal)
         }
     }
