@@ -18,15 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSd-L3-Jvl">
-                                <rect key="frame" x="103" y="307" width="168" height="30"/>
-                                <state key="normal" title="Hide Blue button"/>
+                                <rect key="frame" x="103" y="360" width="168" height="30"/>
+                                <state key="normal" title="Hide Blue"/>
                                 <connections>
                                     <action selector="hideBlueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMH-9A-GLu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvy-y4-fZ0">
-                                <rect key="frame" x="111" y="360" width="153" height="30"/>
-                                <state key="normal" title="Hide Red button">
+                                <rect key="frame" x="111" y="413" width="153" height="30"/>
+                                <state key="normal" title="Hide Red">
                                     <color key="titleColor" red="0.79294829842931935" green="0.039822483695963334" blue="0.10121677404230105" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -39,6 +39,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red" translatesAutoresizingMaskIntoConstraints="NO" id="xu4-up-Jjk">
                                 <rect key="frame" x="200" y="60" width="155" height="102"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue is here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvM-4D-bAA">
+                                <rect key="frame" x="56" y="178" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red is here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ho-DS-GLY">
+                                <rect key="frame" x="234" y="178" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -46,13 +58,15 @@
                     <connections>
                         <outlet property="blueButton" destination="pOV-v5-20U" id="ed5-uS-7gI"/>
                         <outlet property="blueHider" destination="QSd-L3-Jvl" id="1YY-5A-ozY"/>
+                        <outlet property="blueLabel" destination="KvM-4D-bAA" id="WgY-4p-OdB"/>
                         <outlet property="redButton" destination="xu4-up-Jjk" id="dYI-h5-aQb"/>
                         <outlet property="redHider" destination="fvy-y4-fZ0" id="VbV-Zs-i4L"/>
+                        <outlet property="redLabel" destination="9ho-DS-GLY" id="3tW-Xf-CLA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304.5" y="429.5"/>
+            <point key="canvasLocation" x="342.5" y="529.5"/>
         </scene>
     </scenes>
     <resources>

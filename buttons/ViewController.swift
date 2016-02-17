@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var redHider: UIButton!
     var showingBlue = true
     var showingRed = true
+    @IBOutlet weak var blueLabel: UILabel!
+    @IBOutlet weak var redLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +34,11 @@ class ViewController: UIViewController {
         blueButton.hidden = !showingBlue
         
         if !showingBlue {
-            blueHider.setTitle("Show Blue button", forState: .Normal)
+            blueHider.setTitle("Show Blue", forState: .Normal)
+            blueLabel.text = "Blue is lost"
         } else {
-            blueHider.setTitle("Hide Blue button", forState: .Normal)
+            blueHider.setTitle("Hide Blue", forState: .Normal)
+            blueLabel.text = "Blue is here"
         }
     }
 
@@ -43,9 +47,11 @@ class ViewController: UIViewController {
         redButton.hidden = !showingRed
         
         if !showingRed {
-            redHider.setTitle("Show Red button", forState: .Normal)
+            redHider.setTitle("Show Red", forState: .Normal)
+            redLabel.text = "Red is lost"
         } else {
-            redHider.setTitle("Hide Red button", forState: .Normal)
+            redHider.setTitle("Hide Red", forState: .Normal)
+            redLabel.text = "Red is here"
         }
     }
 }
